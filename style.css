@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.search-box input{
+  width: 1400px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+  outline: none;
+}
+
+body{
+  max-width: 1400px;
+  margin: 50px auto;
+  background-color: black;
+  color: white;
+  
+}
+
+
+/* -------- Student-form -------- */
+
+#studentForm input{
+  width:30%;
+  margin: 5px 10px 5px 0;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+#studentForm{
+  margin:50px 0;
+}
+
+
+#studentForm .btns{
+  width: 90%;
+
+  margin-top: 10px;
+}
+
+#studentForm button{
+  width: 25%;
+  height: 30px;
+  border-radius: 5px;
+}
+table {
+  position: relative;
+    border-collapse: collapse;
+    width: 1400px;
+    top:20px;
+  }
+
+  th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+    border-right: 2px solid;
+    
+  }
+
+
+  .edit-icon, .delete-button {
+    cursor: pointer;
+  }
+  .search-box {
+    margin-bottom: 10px;
+}

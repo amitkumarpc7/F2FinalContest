@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management system</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="StudentLogo.png" type="image/x-icon">
+</head>
+<body>
+    <h2>Student Management CRUD</h2>
+
+    <form id="studentForm">
+        <input type="hidden" id="studentId">
+        
+        <input type="text" id="name" placeholder="Name" >
+
+        <input type="email" id="email" placeholder="Email" >
+
+        <input type="number" step="any"  id="grade" placeholder="GPA" >
+        
+        <input type="number" id="age" placeholder="Age" >
+        
+        <input type="text" id="degree" placeholder="Degree" >
+        
+        <br>
+        <div class="btns">
+
+            <button type="submit" id="submitBtn">Add Student</button>
+            <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+        </div>
+    </form>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search by name, email, or degree">
+    </div>
+
+    <table id="studentTable">
+        <!-- <caption class=""caption>student table</caption> -->
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>GPA</th>
+                <th>Degree</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            <!-- Table rows will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
